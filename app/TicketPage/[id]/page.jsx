@@ -2,7 +2,7 @@ import EditTicketForm from "@/app/(components)/EditTicketForm";
 
 const getTicketById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+    const res = await fetch(`/api/Tickets/${id}`, {
       cache: "no-store",
     });
 
@@ -29,7 +29,7 @@ const TicketPage = async ({ params }) => {
       _id: "new",
     };
   }
-  
+
   return <EditTicketForm ticket={updateTicketData} />;
 };
 
