@@ -13,7 +13,7 @@ const getTickets = async () => {
 
     return res.json();
   } catch (error) {
-    alert("Error loading topics: ", error);
+    console.log("Error loading topics: ", error);
   }
 };
 
